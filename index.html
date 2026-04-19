@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Abhishek Pandey – BI Developer & Data Analyst at Cognizant. Power BI, SQL, Snowflake, GenAI & Automation." />
+  <meta name="keywords"    content="portfolio, Abhishek Pandey, BI Developer, Data Analyst, Power BI, DAX, SQL, Snowflake, ThoughtSpot, Power Automate, GenAI, Power Platform" />
+  <meta name="author"      content="Abhishek Pandey" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Abhishek Pandey | Portfolio" />
+  <meta property="og:description" content="BI Developer · Data Analyst · Power BI · SQL · Snowflake · GenAI" />
+  <meta property="og:type"        content="website" />
+
+  <title>Abhishek Pandey | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════ SCROLL PROGRESS ════════════════ -->
+<div id="scroll-progress"></div>
+
+<!-- ══════════════════════ LOADER ══════════════════════════ -->
+<div id="loader">
+  <div class="loader-logo">Port<span style="color:var(--accent3);-webkit-text-fill-color:var(--accent3)">.</span>folio</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- ══════════════════════ PARTICLES ══════════════════════ -->
+<canvas id="particle-canvas"></canvas>
+
+<!-- ══════════════════════ NAVBAR ═════════════════════════ -->
+<nav id="navbar">
+  <a href="#hero" class="logo">Port<span class="logo-dot">.</span>folio</a>
+
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <button class="icon-btn" id="themeToggle" title="Toggle theme">
+      <i class="fas fa-moon"></i>
+    </button>
+    <button class="icon-btn menu-btn" id="menuToggle" title="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- ══════════════════════ HERO ════════════════════════════ -->
+<section id="hero">
+  <div class="hero-left">
+
+    <div class="hero-greeting">
+      <i class="fas fa-hand fa-wave"></i>
+      Hello, World! I'm
+    </div>
+
+    <div class="hero-name">
+      <span class="first">Abhishek </span><span class="last">Pandey</span>
+    </div>
+
+    <div class="hero-typed-wrap">
+      I'm a&nbsp;<span id="typed-text"></span>
+    </div>
+
+    <p class="hero-bio">
+      <strong>BI Developer &amp; Data Analyst</strong> at <strong>Cognizant</strong> with 3+ years of experience
+      delivering end-to-end BI solutions and automation. Skilled in <strong>Power BI</strong>, <strong>SQL</strong>,
+      <strong>Snowflake</strong>, and <strong>GenAI-powered</strong> insights.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#contact" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i> Hire Me
+      </a>
+      <a href="assets/Abhishek_Pandey_Resume.pdf" class="btn btn-outline download-cv" download>
+        <i class="fas fa-download"></i> Download CV
+      </a>
+      <a href="#projects" class="btn btn-outline">
+        <i class="fas fa-code"></i> View Work
+      </a>
+    </div>
+
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/theabhipandey" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:abhipandey9616@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/919794298928" target="_blank" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" data-target="3">0</div>
+        <div class="stat-label">Years Exp.</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="20">0</div>
+        <div class="stat-label">Dashboards</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="40">0</div>
+        <div class="stat-label">% Effort Reduced</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="2">0</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+    </div>
+
+  </div><!-- .hero-left -->
+
+  <div class="hero-right">
+    <div class="avatar-wrap">
+      <div class="avatar-ring-2"></div>
+      <div class="avatar-ring"></div>
+      <div class="avatar-glow"></div>
+      <!-- If you add a photo, place it in assets/images and replace the emoji below with an <img> tag -->
+      <div class="avatar-img">
+        <span class="avatar-emoji">AP</span>
+      </div>
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        Available to Work
+      </div>
+      <div class="tech-badge">
+        <i class="fas fa-chart-line" style="color:var(--accent)"></i>
+        BI / Analytics
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ ABOUT ═══════════════════════════ -->
+<section id="about">
+  <div class="reveal">
+    <p class="section-label">about</p>
+    <h2 class="section-title">Who I <span class="gradient">Am</span></h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="about-grid">
+    <!-- Left: Bio -->
+    <div class="about-text reveal-left">
+      <p>
+        I’m <strong>Abhishek Pandey</strong>, a <strong>BI Developer &amp; Data Analyst</strong> with 3+ years of experience
+        delivering end-to-end Business Intelligence solutions.
+      </p>
+      <p>
+        I work extensively with <strong>Power BI</strong>, <strong>DAX</strong>, <strong>SQL</strong>, <strong>Snowflake</strong> and
+        automation using <strong>Power Automate</strong>, <strong>Python</strong> and <strong>REST APIs</strong>.
+        I enjoy building scalable data models, performance-tuned reports, and self-service analytics experiences.
+      </p>
+      <p>
+        Recently, I’ve also been building <strong>GenAI-powered</strong> solutions (chatbots, summaries, report navigation)
+        to improve decision-making and user experience.
+      </p>
+
+      <div class="traits-grid">
+        <div class="trait-card">
+          <div class="trait-icon">📈</div>
+          <div class="trait-title">Analytics First</div>
+          <div class="trait-desc">I design metrics, KPIs, and models that support real business decisions.</div>
+        </div>
+        <div class="trait-card">
+          <div class="trait-icon">⚡</div>
+          <div class="trait-title">Automation</div>
+          <div class="trait-desc">I reduce manual effort with Power Automate, Python, and APIs.</div>
+        </div>
+        <div class="trait-card">
+          <div class="trait-icon">🧠</div>
+          <div class="trait-title">GenAI</div>
+          <div class="trait-desc">I build AI-driven experiences for insights, Q&amp;A, and report guidance.</div>
+        </div>
+        <div class="trait-card">
+          <div class="trait-icon">🛡️</div>
+          <div class="trait-title">Governance</div>
+          <div class="trait-desc">I implement RLS, workspace governance, and secure access patterns.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Info List -->
+    <div class="info-list reveal-right">
+      <div class="info-item">
+        <div class="info-item-icon"><i class="fas fa-user"></i></div>
+        <div>
+          <div class="info-item-label">Full Name</div>
+          <div class="info-item-value">Abhishek Pandey</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-icon"><i class="fas fa-briefcase"></i></div>
+        <div>
+          <div class="info-item-label">Current Role</div>
+          <div class="info-item-value">Programmer Analyst | BI Developer @ Cognizant</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <div class="info-item-label">Location</div>
+          <div class="info-item-value">Noida, Uttar Pradesh, India 🇮🇳</div>
+        </div>
+      </div>
+      <div class="info-item" data-copy="abhipandey9616@gmail.com" style="cursor:pointer" title="Click to copy">
+        <div class="info-item-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <div class="info-item-label">Email (click to copy)</div>
+          <div class="info-item-value"><a href="mailto:abhipandey9616@gmail.com">abhipandey9616@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="info-item" data-copy="+91-9794298928" style="cursor:pointer" title="Click to copy">
+        <div class="info-item-icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <div class="info-item-label">Phone (click to copy)</div>
+          <div class="info-item-value">+91-9794298928</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div>
+          <div class="info-item-label">Education</div>
+          <div class="info-item-value">Master of Computer Application (MCA)</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-icon"><i class="fas fa-university"></i></div>
+        <div>
+          <div class="info-item-label">University</div>
+          <div class="info-item-value">Kanpur Institute of Technology</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-item-icon"><i class="fas fa-language"></i></div>
+        <div>
+          <div class="info-item-label">Languages</div>
+          <div class="info-item-value">English · Hindi</div>
+        </div>
+      </div>
+
+      <a href="assets/Abhishek_Pandey_Resume.pdf" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem" target="_blank" rel="noopener">
+        <i class="fas fa-file-pdf"></i> View Resume
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SKILLS ══════════════════════════ -->
+<section id="skills">
+  <div class="reveal">
+    <p class="section-label">skills</p>
+    <h2 class="section-title">My Technical <span class="gradient">Arsenal</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">Tools and technologies I use to build BI solutions, automate workflows, and enable self-service analytics.</p>
+  </div>
+
+  <div class="skills-layout">
+    <!-- Skill Bars -->
+    <div class="skills-bars reveal-left">
+
+      <div class="skill-cat-heading">BI, Data &amp; Analytics</div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">📊 Power BI</span>
+          <span class="skill-row-pct">95%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🧮 DAX</span>
+          <span class="skill-row-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🧹 Power Query</span>
+          <span class="skill-row-pct">85%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🟦 ThoughtSpot</span>
+          <span class="skill-row-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🧵 Microsoft Fabric</span>
+          <span class="skill-row-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+
+      <div class="skill-cat-heading">Data Platforms &amp; Automation</div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🗄️ SQL</span>
+          <span class="skill-row-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">❄️ Snowflake</span>
+          <span class="skill-row-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🔁 Power Automate</span>
+          <span class="skill-row-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🐍 Python</span>
+          <span class="skill-row-pct">70%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🔌 REST APIs</span>
+          <span class="skill-row-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+
+      <div class="skill-cat-heading">Delivery &amp; Governance</div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🧩 Azure DevOps (CI/CD)</span>
+          <span class="skill-row-pct">75%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🧭 Agile / Scrum</span>
+          <span class="skill-row-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-row-header">
+          <span class="skill-row-name">🛡️ Power BI Governance / RLS</span>
+          <span class="skill-row-pct">80%</span>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+      </div>
+
+    </div>
+
+    <!-- Tech Icon Grid -->
+    <div class="tech-grid-wrap reveal-right">
+      <div class="tech-grid-title">🧰 Technologies I Work With</div>
+      <div class="tech-grid">
+        <div class="tech-item"><span class="tech-item-icon">📊</span>Power BI</div>
+        <div class="tech-item"><span class="tech-item-icon">🧮</span>DAX</div>
+        <div class="tech-item"><span class="tech-item-icon">🧹</span>Power Query</div>
+        <div class="tech-item"><span class="tech-item-icon">❄️</span>Snowflake</div>
+        <div class="tech-item"><span class="tech-item-icon">🗄️</span>SQL</div>
+        <div class="tech-item"><span class="tech-item-icon">🟦</span>ThoughtSpot</div>
+        <div class="tech-item"><span class="tech-item-icon">🧵</span>Microsoft Fabric</div>
+        <div class="tech-item"><span class="tech-item-icon">🔁</span>Power Automate</div>
+        <div class="tech-item"><span class="tech-item-icon">🐍</span>Python</div>
+        <div class="tech-item"><span class="tech-item-icon">🔌</span>REST APIs</div>
+        <div class="tech-item"><span class="tech-item-icon">🛡️</span>RLS</div>
+        <div class="tech-item"><span class="tech-item-icon">🧩</span>Azure DevOps</div>
+        <div class="tech-item"><span class="tech-item-icon">📌</span>Jira</div>
+        <div class="tech-item"><span class="tech-item-icon">🗂️</span>ServiceNow</div>
+        <div class="tech-item"><span class="tech-item-icon">🤖</span>GenAI</div>
+        <div class="tech-item"><span class="tech-item-icon">🧠</span>Prompting</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ EXPERIENCE ══════════════════════ -->
+<section id="experience">
+  <div class="reveal">
+    <p class="section-label">experience</p>
+    <h2 class="section-title">My <span class="gradient">Journey</span></h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-top">
+          <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Mar 2022 – Present</div>
+          <div class="timeline-type">Full-time</div>
+        </div>
+        <div class="timeline-role">Programmer Analyst | BI Developer</div>
+        <div class="timeline-company"><i class="fas fa-building"></i> Cognizant Technology Solutions</div>
+        <ul class="timeline-bullets">
+          <li>Developed 20+ interactive <strong>Power BI</strong> dashboards supporting pharmaceutical and sales business units, enabling data-driven decisions.</li>
+          <li>Designed optimized <strong>star schema</strong> models and implemented advanced <strong>DAX</strong> calculations (KPIs, time intelligence, rolling metrics).</li>
+          <li>Automated end-to-end reporting workflows using <strong>Python</strong>, <strong>Power Automate</strong>, and <strong>REST APIs</strong>, reducing manual effort by <strong>40%</strong>.</li>
+          <li>Built a <strong>GenAI-powered</strong> Power BI chatbot extension to support natural language queries, report navigation, and automated data summaries.</li>
+          <li>Implemented a self-service automated report access solution using Power Automate + Microsoft Forms + Power BI Admin APIs, reducing manual access management by <strong>80%</strong>.</li>
+          <li>Delivered secure & scalable BI solutions by implementing <strong>Row Level Security (RLS)</strong>, workspace governance, and on-premises gateway management.</li>
+          <li>Improved report performance and model efficiency using DAX Studio, Tabular Editor, Power BI Helper, and Measure Killer.</li>
+          <li>Delivered BI solutions using <strong>Agile</strong> methodologies while collaborating with cross-functional teams via Jira and ServiceNow.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">SQL</span>
+          <span class="tag">Snowflake</span><span class="tag">Power Automate</span><span class="tag">GenAI</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot green"></div>
+      <div class="timeline-card">
+        <div class="timeline-top">
+          <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2022 – Jul 2024</div>
+          <div class="timeline-type">Education</div>
+        </div>
+        <div class="timeline-role">Master of Computer Application (MCA)</div>
+        <div class="timeline-company"><i class="fas fa-university"></i> Kanpur Institute of Technology, Kanpur</div>
+        <ul class="timeline-bullets">
+          <li>Focused on software engineering fundamentals and applied analytics.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">Computer Applications</span><span class="tag">Software Engineering</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-dot green"></div>
+      <div class="timeline-card">
+        <div class="timeline-top">
+          <div class="timeline-date"><i class="fas fa-calendar-alt"></i> Jun 2018 – Oct 2021</div>
+          <div class="timeline-type">Education</div>
+        </div>
+        <div class="timeline-role">Bachelor of Computer Application (BCA)</div>
+        <div class="timeline-company"><i class="fas fa-university"></i> Chhatrapati Shahu Ji Maharaj University (CSJMU), Kanpur</div>
+        <ul class="timeline-bullets">
+          <li>Built strong foundations in programming, databases, and web technologies.</li>
+        </ul>
+        <div class="timeline-tags">
+          <span class="tag">Programming</span><span class="tag">Databases</span><span class="tag">Web Basics</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ PROJECTS ════════════════════════ -->
+<section id="projects">
+  <div class="reveal">
+    <p class="section-label">projects</p>
+    <h2 class="section-title">Featured <span class="gradient">Projects</span></h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">Selected BI work across dashboards, automation, governance, and GenAI experiences.</p>
+  </div>
+
+  <div class="projects-toolbar reveal">
+    <div class="filter-pills">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="dashboard">Dashboards</button>
+      <button class="filter-pill" data-filter="model">Data Modeling</button>
+      <button class="filter-pill" data-filter="automation">Automation</button>
+      <button class="filter-pill" data-filter="gov">Governance</button>
+      <button class="filter-pill" data-filter="genai">GenAI</button>
+    </div>
+    <div class="search-wrap">
+      <i class="fas fa-search"></i>
+      <input type="text" id="projectSearch" placeholder="Search projects…" />
+    </div>
+  </div>
+
+  <div class="projects-grid">
+
+    <div class="project-card reveal" data-cat="dashboard">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0b7285,#12b886,#20c997)">
+        📊
+        <span class="project-featured-badge">⭐ Featured</span>
+      </div>
+      <div class="project-body">
+        <div class="project-title">Power BI Commercial &amp; Sales Performance Suite</div>
+        <div class="project-desc">Built interactive Power BI dashboards for sales leadership with KPI tracking, drill-through analysis, and scheduled refreshes across multiple business units. Optimized report performance with model tuning and DAX best practices.</div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="#" class="project-link" title="Add a showcase link if available"><i class="fas fa-lock"></i> Private</a>
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Power BI</span><span class="stack-pill">DAX</span><span class="stack-pill">Power Query</span><span class="stack-pill">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="model">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#1f3c88,#3f37c9,#4cc9f0)">🧩</div>
+      <div class="project-body">
+        <div class="project-title">Enterprise Semantic Model (Star Schema + RLS)</div>
+        <div class="project-desc">Designed scalable star-schema semantic models with shared dimensions, time intelligence, and Row-Level Security (RLS). Improved reusability across reports and reduced duplicate logic by standardizing measures and KPI definitions.</div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="#" class="project-link" title="Add documentation link if available"><i class="fas fa-file-lines"></i> Notes</a>
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Data Modeling</span><span class="stack-pill">DAX</span><span class="stack-pill">RLS</span><span class="stack-pill">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="automation">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#2d3436,#636e72,#00cec9)">🔁</div>
+      <div class="project-body">
+        <div class="project-title">Automated Reporting Pipeline (Python + APIs)</div>
+        <div class="project-desc">Automated data extraction/validation and downstream reporting tasks using Python and REST APIs. Reduced manual reporting effort by ~40% with robust error handling, logging, and repeatable deployment patterns.</div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="#" class="project-link" title="Add repo link if public"><i class="fab fa-github"></i> Code</a>
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Python</span><span class="stack-pill">REST APIs</span><span class="stack-pill">Automation</span><span class="stack-pill">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="gov">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#141e30,#243b55)">🛡️</div>
+      <div class="project-body">
+        <div class="project-title">Self-Service Power BI Access Requests (Forms + Admin APIs)</div>
+        <div class="project-desc">Built a self-service workflow for report/workspace access using Power Automate + Microsoft Forms + Power BI Admin APIs. Standardized approvals, reduced access-management turnaround time, and improved governance with audit-ready tracking.</div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="#" class="project-link" title="Add demo link if available"><i class="fas fa-diagram-project"></i> Flow</a>
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Power Automate</span><span class="stack-pill">Power BI Admin APIs</span><span class="stack-pill">Governance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="genai">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#3a1c71,#d76d77,#ffaf7b)">
+        🤖
+        <span class="project-featured-badge">⭐ Featured</span>
+      </div>
+      <div class="project-body">
+        <div class="project-title">GenAI Power BI Assistant (Q&amp;A + Navigation + Summaries)</div>
+        <div class="project-desc">Created a GenAI-powered assistant to help users ask questions in natural language, navigate report pages, and generate metric summaries. Reduced time-to-insight and improved onboarding for new users.</div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="#" class="project-link" title="Add a video/demo link if available"><i class="fas fa-play-circle"></i> Demo</a>
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">GenAI</span><span class="stack-pill">Power BI</span><span class="stack-pill">Prompting</span><span class="stack-pill">APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal" data-cat="dashboard">
+      <div class="project-thumb" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)">📈</div>
+      <div class="project-body">
+        <div class="project-title">Executive KPI Scorecard (Performance &amp; Adoption)</div>
+        <div class="project-desc">Built an executive scorecard with KPI targets vs actuals, trends, and adoption metrics. Implemented standardized definitions and performance optimizations to support fast slicing across large datasets.</div>
+        <div class="project-footer">
+          <div class="project-links">
+            <a href="#" class="project-link" title="Add a showcase link if available"><i class="fas fa-chart-simple"></i> Snapshot</a>
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Power BI</span><span class="stack-pill">DAX</span><span class="stack-pill">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ CERTIFICATIONS ══════════════════ -->
+<section id="certifications">
+  <div class="reveal">
+    <p class="section-label">certifications</p>
+    <h2 class="section-title">Credentials &amp; <span class="gradient">Achievements</span></h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏅</div>
+      <div class="cert-name">PL-300: Power BI Data Analyst Associate</div>
+      <div class="cert-issuer">Microsoft</div>
+      <div class="cert-date">Verified Credential</div>
+      <div class="cert-badge"><i class="fas fa-check-circle"></i> Verified</div>
+      <a class="project-link" style="margin-top:.6rem;display:inline-flex" href="https://learn.microsoft.com/api/credentials/share/en-us/AbhishekPandey-0538/C189EE16C142CE4A?sharingId=752CD4CAAE50C48F" target="_blank" rel="noopener">
+        <i class="fas fa-external-link-alt"></i>&nbsp;View credential
+      </a>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-icon">🏅</div>
+      <div class="cert-name">DP-600: Fabric Analytics Engineer Associate</div>
+      <div class="cert-issuer">Microsoft</div>
+      <div class="cert-date">Verified Credential</div>
+      <div class="cert-badge"><i class="fas fa-check-circle"></i> Verified</div>
+      <a class="project-link" style="margin-top:.6rem;display:inline-flex" href="https://learn.microsoft.com/api/credentials/share/en-us/AbhishekPandey-0538/E690A5DEEC0AD6F9?sharingId=752CD4CAAE50C48F" target="_blank" rel="noopener">
+        <i class="fas fa-external-link-alt"></i>&nbsp;View credential
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ TESTIMONIALS ════════════════════ -->
+<section id="testimonials">
+  <div class="reveal">
+    <p class="section-label">testimonials</p>
+    <h2 class="section-title">What People <span class="gradient">Say</span></h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">An exceptionally talented developer who consistently delivers beyond expectations. Their ability to translate complex requirements into clean, efficient code is remarkable. A true asset to any team.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">👩‍💼</div>
+        <div>
+          <div class="testimonial-name">Sarah Johnson</div>
+          <div class="testimonial-role">Senior Manager, Cognizant</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">I've worked with many developers, but few match their combination of technical depth and collaborative energy. They turned our legacy system into a modern, high-performance application.</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">👨‍💻</div>
+        <div>
+          <div class="testimonial-name">Rahul Mehta</div>
+          <div class="testimonial-role">Tech Lead, Client Project</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card reveal">
+      <div class="testimonial-stars">★★★★★</div>
+      <div class="testimonial-quote">"</div>
+      <div class="testimonial-text">Their open-source contributions to our project were outstanding. Clean code, thorough documentation, and a genuine passion for solving problems. Highly recommended!</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">👨‍🔬</div>
+        <div>
+          <div class="testimonial-name">Alex Chen</div>
+          <div class="testimonial-role">Open Source Maintainer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CONTACT ══════════════════════════ -->
+<section id="contact">
+  <div class="reveal">
+    <p class="section-label">contact</p>
+    <h2 class="section-title">Let's <span class="gradient">Connect</span></h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="contact-grid">
+    <!-- Info -->
+    <div class="contact-info reveal-left">
+      <p class="contact-intro">
+        Whether you have a project in mind, a job opportunity, or just want to say hello —
+        my inbox is always open. I typically respond within <strong>24 hours</strong>. 📬
+      </p>
+
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+        <div>
+          <div class="contact-item-label">Email</div>
+          <div class="contact-item-value"><a href="mailto:abhipandey9616@gmail.com">abhipandey9616@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+        <div>
+          <div class="contact-item-label">Phone</div>
+          <div class="contact-item-value">+91-9794298928</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon" style="background:rgba(37,211,102,.15);color:#25d366"><i class="fab fa-whatsapp"></i></div>
+        <div>
+          <div class="contact-item-label">WhatsApp</div>
+          <div class="contact-item-value"><a href="https://wa.me/919794298928" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div>
+          <div class="contact-item-label">Location</div>
+          <div class="contact-item-value">Noida, Uttar Pradesh, India 🇮🇳</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-item-icon"><i class="fab fa-linkedin-in"></i></div>
+        <div>
+          <div class="contact-item-label">LinkedIn</div>
+          <div class="contact-item-value"><a href="https://www.linkedin.com/in/theabhipandey" target="_blank">linkedin.com/in/theabhipandey</a></div>
+        </div>
+      </div>
+
+      <div class="availability-banner">
+        <div class="avail-dot"></div>
+        <div class="avail-text">
+          <strong>Open to opportunities</strong> — Full-time, Freelance &amp; Collaborations
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp CTA (replaces the old form) -->
+    <div class="contact-form-wrap reveal-right" style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;text-align:center;">
+      <div style="font-size:5rem;line-height:1;">
+        <i class="fab fa-whatsapp" style="color:#25d366;filter:drop-shadow(0 0 24px #25d36688)"></i>
+      </div>
+      <div style="font-size:1.35rem;font-weight:700;">Let's Chat on WhatsApp 💬</div>
+      <p style="color:var(--text-muted);font-size:.95rem;max-width:340px;">
+        Prefer a quick conversation? Tap the button below to open a WhatsApp chat directly — no forms, no waiting.
+      </p>
+      <a href="https://wa.me/919794298928?text=Hi%20Abhishek%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect!"
+         target="_blank" rel="noopener"
+         class="submit-btn"
+         style="background:linear-gradient(135deg,#25d366,#128c7e);border:none;text-decoration:none;display:inline-flex;align-items:center;gap:.6rem;font-size:1rem;padding:.9rem 2rem;border-radius:12px;color:#fff;font-weight:600;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 24px #25d36644;"
+         onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 32px #25d36666'"
+         onmouseout="this.style.transform='';this.style.boxShadow='0 4px 24px #25d36644'">
+        <i class="fab fa-whatsapp" style="font-size:1.2rem"></i> Open WhatsApp Chat
+      </a>
+      <p style="color:var(--text-muted);font-size:.8rem;">
+        Usually replies within <strong>a few hours</strong> ⚡
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Port<span style="color:var(--accent3);-webkit-text-fill-color:var(--accent3)">.</span>folio</div>
+      <p class="footer-tagline">Building scalable BI solutions and automation — one insight at a time.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/theabhipandey" target="_blank" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:abhipandey9616@gmail.com" class="footer-social-link"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/919794298928" target="_blank" rel="noopener" class="footer-social-link" title="WhatsApp" style="background:rgba(37,211,102,.15);color:#25d366"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <div class="footer-links">
+        <a href="#about"          class="footer-link">About Me</a>
+        <a href="#skills"         class="footer-link">Skills</a>
+        <a href="#experience"     class="footer-link">Experience</a>
+        <a href="#projects"       class="footer-link">Projects</a>
+        <a href="#certifications" class="footer-link">Certifications</a>
+        <a href="#contact"        class="footer-link">Contact</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Quick Links</div>
+      <div class="footer-links">
+        <a href="assets/Abhishek_Pandey_Resume.pdf" target="_blank" rel="noopener" class="footer-link">📄 Resume (PDF)</a>
+        <a href="https://www.linkedin.com/in/theabhipandey" target="_blank" class="footer-link">🔗 LinkedIn</a>
+        <a href="mailto:abhipandey9616@gmail.com" class="footer-link">✉️ Send Email</a>
+        <a href="https://wa.me/919794298928" target="_blank" rel="noopener" class="footer-link">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 <a href="#hero">Abhishek Pandey</a>. All rights reserved.</p>
+    <p class="footer-made">Made in India 🇮🇳</p>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<button id="scroll-top" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- ══════════════════════ SCRIPTS ══════════════════════════ -->
+<script src="js/main.js"></script>
+</body>
+</html>
